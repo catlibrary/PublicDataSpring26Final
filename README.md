@@ -13,7 +13,7 @@ The project combines multiple interactive visualizations to tell a data-driven s
 Live Website:  
 (https://catlibrary.github.io/PublicDataSpring26Final/)
 
-![Project Website Screenshot](Images/Final_Website_Pic.jpg)
+![Project Website Screenshot](Images/Final_Website1.png)
 
 ---
 
