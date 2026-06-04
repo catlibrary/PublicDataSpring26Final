@@ -11,7 +11,7 @@ The project combines multiple interactive visualizations to tell a data-driven s
 ## Project Website
 
 Live Website:  
-[Insert GitHub Pages URL Here]
+(https://catlibrary.github.io/PublicDataSpring26Final/)
 
 ![Project Website Screenshot](Images/Final_Website_Pic.jpg)
 
@@ -138,15 +138,3 @@ https://www.neilsberg.com/insights/seattle-wa-median-household-income/
 
 - https://observablehq.com/@didoesdigital/about-choropleth-maps
 
----
-
-## Project Structure
-
-text project-folder/ │ ├── index.html ├── style.css ├── main.js ├── yahya_linechart.js ├── rishita_scatterplot.js │ ├── datasets/ │   ├── RentTypology.geojson │   ├── RentTypology.csv │   └── other datasets │ ├── images/ │   ├── hero-image.jpg │   ├── linechart-screenshot.png │   ├── choropleth-screenshot.png │   └── scatterplot-screenshot.png │ └── README.md 
-
-## Future Improvements
-
-- Additional neighborhood demographic analysis
-- Mobile-specific map interactions
-- Time-slider map animation
-- Expanded affordability metrics beyond rent and income
