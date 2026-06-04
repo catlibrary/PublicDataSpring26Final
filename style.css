@@ -1,0 +1,445 @@
+/* GENERAL PAGE STYLES
+   These styles control the main page background, typography,
+   links, and overall page width. */
+
+body {
+  background-color: #f4f1ea;
+  font-family: Arial, sans-serif;
+  color: #1f2d3d;
+  margin: 0;
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 35px 25px;
+}
+
+a {
+  color: #e85d04;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: #17215f;
+  font-size: 52px;
+  line-height: 1.05;
+  margin: 0 0 18px 0;
+  max-width: 900px;
+}
+
+h2 {
+  color: #17215f;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.55;
+  max-width: 850px;
+}
+
+
+/* HERO SECTION
+   This section styles the main title, subtitle, and opening
+   Seattle skyline image. */
+
+.hero {
+  padding: 35px 0 25px 0;
+}
+
+.label {
+  color: #e85d04;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle,
+.subtitle {
+  font-size: 23px;
+  line-height: 1.35;
+  color: #33415c;
+  max-width: 780px;
+}
+
+img.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 980px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin: 30px auto 8px auto;
+}
+
+.image-caption {
+  font-size: 14px;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+/* STORY SECTIONS AND CHART CARDS
+   These styles create the white cards and narrative sections
+   throughout the data story.*/
+
+.story-section,
+.chart-card {
+  background-color: white;
+  border-radius: 14px;
+  padding: 28px;
+  margin: 15px 0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
+
+.story-section {
+  background-color: #fffaf2;
+}
+
+.section-number {
+  color: #e85d04;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.chart-note {
+  background-color: #fff3e6;
+  border-left: 5px solid #e85d04;
+  padding: 12px;
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+.caption {
+  font-size: 14px;
+  color: #555;
+  margin-top: 12px;
+}
+
+.placeholder {
+  background-color: #f4f6fb;
+  border: 1px dashed #888;
+  color: #555;
+  padding: 25px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+
+/* GENERAL SVG STYLES
+   These styles apply to SVG visualizations unless overwritten
+   by a more specific chart style below. */
+
+svg {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.axis-label {
+  font-size: 13px;
+  fill: #17215f;
+}
+
+.legend-title {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #17215f;
+}
+
+.error {
+  fill: #9d0208;
+  color: #9d0208;
+}
+
+
+/* VISUALIZATION 1: YAHYA LINE CHART
+   These styles control the rent vs. income line chart. */
+
+#line-chart {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+#line-chart svg {
+  background-color: white;
+  border: none;
+  margin-top: 0;
+}
+
+.story-label {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #17215f;
+}
+
+.legend-text {
+  font-size: 13px;
+  fill: #1f2d3d;
+}
+
+
+/* VISUALIZATION 2: ALEJANDRA CHOROPLETH MAPS
+   These styles control the three Seattle rent maps, the shared
+   legend, and the hover information box. */
+
+.map-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.small-map {
+  flex: 1;
+  min-width: 280px;
+}
+
+.small-map h3 {
+  color: #17215f;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.small-map svg {
+  width: 100%;
+  height: auto;
+}
+
+.tract {
+  stroke: white;
+  stroke-width: 0.4px;
+  opacity: 0.85;
+}
+
+.map-note {
+  font-size: 15px;
+  color: #555;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+.map-bottom-row {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+#shared-legend {
+  flex: 0 0 280px;
+  background-color: #fff7ed;
+  border: 1px solid #f7c59f;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 20px 0;
+  width: fit-content;
+}
+
+.legend-title-html {
+  font-weight: bold;
+  color: #17215f;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.legend-item {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+
+.legend-item span {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.map-info-box {
+  flex: 1;
+  background-color: white;
+  border-left: 5px solid #f16913;
+  padding: 15px;
+  margin: 18px 0;
+  font-size: 16px;
+  max-width: 760px;
+  color: #1f2d3d;
+  border-radius: 8px;
+  min-height: 70px;
+}
+
+
+/* VISUALIZATION 3: RISHITA SCATTERPLOTS
+   These styles control the scatterplot section, chart panels,
+   tooltip, and explanation box. */
+
+#scatterplot {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+#scatterplot svg {
+  background-color: white;
+  border: none;
+  margin-top: 0;
+}
+
+.period-chart {
+  margin-bottom: 28px;
+}
+
+.description-box {
+  background-color: #fff7ed;
+  border: 1px solid #f7c59f;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 18px 0;
+}
+
+.description-box h3 {
+  margin-top: 0;
+  color: #17215f;
+}
+
+.description-box ul {
+  margin-bottom: 0;
+}
+
+.description-box li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 13px;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.chart-title {
+  font-size: 22px;
+  font-weight: bold;
+  fill: #17215f;
+}
+
+.chart-subtitle {
+  font-size: 14px;
+  fill: #33415c;
+}
+
+
+/* RESULTS BOXES
+   These styles control the results summaries under each chart. */
+
+.results-box {
+  background-color: white;
+  border-radius: 14px;
+  padding: 28px;
+  margin-top: 25px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
+
+.results-box h3 {
+  color: #17215f;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.results-box p {
+  margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   CONCLUSION SECTION
+   This section is styled to stand out as the final takeaway
+   of the data story.
+========================================================= */
+
+.conclusion {
+  background: #fffdf8;
+  border-left: 8px solid #f26b00;
+  border-radius: 12px;
+  padding: 40px;
+  margin-top: 30px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.conclusion h2 {
+  color: #17176f;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+
+/* REFERENCES SECTION
+   These styles control the final references card. */
+
+.references-box {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  border-top: 6px solid #e85d04;
+}
+
+.references-box h2 {
+  color: #17215f;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.references-box p {
+  max-width: 850px;
+  margin-bottom: 20px;
+}
+
+.references-box ul {
+  padding-left: 22px;
+}
+
+.references-box li {
+  margin-bottom: 12px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.references-box a {
+  color: #e85d04;
+  font-weight: bold;
+}

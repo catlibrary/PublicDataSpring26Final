@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Seattle Housing Affordability After COVID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page">
+
+    <div class="hero">
+      <h1>Seattle’s Housing Recovery Came With a Cost</h1>
+
+      <p class="hero-subtitle">
+        As rent prices climbed after COVID, some neighborhoods became far less affordable than others.
+      </p>
+
+      <img
+        src="images/V_A_Seattle.jpg"
+        alt="Seattle skyline"
+        class="hero-image">
+
+      <p class="image-caption">
+        Photo by
+        <a href="https://pixabay.com/photos/seattle-downtown-landmark-8027337/" target="_blank">
+          Veronika Andrews (Pixabay)
+        </a>
+      </p>
+    </div>
+
+    <section class="story-section">
+      <p>
+        Seattle’s housing market changed sharply before, during, and after the COVID-19 pandemic.
+        This project uses public housing and income data to examine whether residents’ incomes kept
+        pace with rising rents, where housing costs are highest, and how neighborhood change may be
+        connected to affordability pressures.
+      </p>
+    </section>
+
+    <section class="chart-card">
+      <p class="section-number">01</p>
+
+      <h2>Rent and income both rose after COVID, but not at the same pace</h2>
+
+      <p>
+        Seattle has experienced rising housing costs and income growth over the past several years.
+        This visualization compares average apartment rent growth and median household income
+        growth from 2018 to 2023 to examine whether incomes have increased enough to keep up
+        with changing housing costs before, during, and after COVID.
+      </p>
+
+      <div id="line-chart"></div>
+
+      <section class="results-box">
+        <h3>Results</h3>
+
+        <p>
+          The visualization shows that both average apartment rent and median household income increased
+          between 2018 and 2023. However, household income grew at a faster rate than average
+          apartment rent over the same period.
+        </p>
+
+        <p>
+          <strong>Before COVID:</strong> Rent and household income both increased between
+          2018 and 2019.
+        </p>
+
+        <p>
+          <strong>During COVID:</strong> Rent growth slowed around 2020 while household
+          income continued increasing. This created a larger gap between the two trends.
+        </p>
+
+        <p>
+          <strong>After COVID:</strong> Both rent and income continued to rise, but
+          household income showed a larger overall increase compared to 2018.
+        </p>
+      </section>
+
+      <p class="chart-note">
+        <strong>Takeaway:</strong> Household income grew faster than average apartment rent
+        between 2018 and 2023, but housing costs remained higher after COVID than before
+        the pandemic.
+      </p>
+
+      <p class="caption">
+        Sources:
+        <a href="https://www.neilsberg.com/insights/seattle-wa-median-household-income/" target="_blank">
+          Neilsberg, Seattle WA Median Household Income
+        </a>
+        and
+        <a href="https://data.seattle.gov/dataset/Apartment-Market-Rent-Prices-by-Census-Tract/h27p-5k3i/about_data" target="_blank">
+          Seattle Open Data, Apartment Market Rent Prices by Census Tract
+        </a>.
+      </p>
+    </section>
+
+    <section class="story-section">
+      <h2>But citywide averages only tell part of the story</h2>
+    <p>
+      Even when income rises overall, affordability can still feel different depending on where people live.
+      To understand how rent pressure appeared across Seattle, we mapped median rents by census tract.
+    </p>
+    </section>
+
+    <section class="chart-card">
+      <p class="section-number">02</p>
+
+      <h2>Rent pressure shifted across Seattle before, during, and after COVID</h2>
+
+      <p>
+        These maps compare median apartment rent per unit by Seattle census tract in
+        2017, 2020, and 2023. Using the same color scale makes it easier to see how
+        high-rent areas persisted or shifted across time.
+      </p>
+
+      <p class="map-note">
+        Scroll or pinch to zoom into each map. Hover over census tracts to compare rent values across the three time periods.
+      </p>
+
+      <div class="map-grid">
+
+        <div class="small-map">
+          <h3>2017: Before COVID</h3>
+          <svg id="map2017" width="430" height="530"></svg>
+        </div>
+
+        <div class="small-map">
+          <h3>2020: During COVID</h3>
+          <svg id="map2020" width="430" height="530"></svg>
+        </div>
+
+        <div class="small-map">
+          <h3>2023: After COVID</h3>
+          <svg id="map2023" width="430" height="530"></svg>
+        </div>
+
+      </div>
+
+      <div class="map-bottom-row">
+
+        <div id="shared-legend"></div>
+
+        <div id="rent-map-info" class="map-info-box">
+          Hover over a census tract to see rent information.
+        </div>
+
+      </div>
+
+      <section class="results-box">
+        <h3>Results</h3>
+
+        <p>
+          These maps compare Seattle census tract median apartment rents before, during, and after COVID using the same color scale. This allows viewers to identify where rent pressure remained concentrated and how housing costs shifted across neighborhoods over time.
+        </p>
+
+        <p>
+          <strong>Before COVID:</strong> Higher-rent census tracts were already concentrated in central Seattle and areas surrounding downtown. While some neighborhoods showed relatively lower rents, affordability pressures were visible before the pandemic began.
+        </p>
+
+        <p>
+          <strong>During COVID:</strong> Rent patterns remained concentrated in many of the same areas despite pandemic-related disruptions. Several neighborhoods continued to exhibit moderate to high rent values, suggesting that housing costs remained elevated even during periods of economic uncertainty.
+        </p>
+
+        <p>
+          <strong>After COVID:</strong> More census tracts appear in the higher rent categories, particularly in and around central Seattle. The persistence of darker-colored tracts indicates that housing costs remained high after the pandemic and may have expanded into additional neighborhoods.
+        </p>
+
+        <p>
+          Comparing all three maps suggests that Seattle's highest-rent areas remained relatively stable over time while overall rent pressure became more widespread. Rather than reversing during the recovery period, many neighborhoods continued to experience elevated housing costs after COVID.
+        </p>
+      </section>
+
+      <p class="chart-note">
+        Takeaway: high-rent areas were already visible before COVID, but comparing
+        2017, 2020, and 2023 shows how rent pressure remained concentrated and
+        evolved across Seattle neighborhoods.
+      </p>
+
+      <p class="caption">
+        Source:
+        <a href="https://data.seattle.gov/dataset/Apartment-Market-Rent-Prices-by-Census-Tract/h27p-5k3i/about_data" target="_blank">
+          Seattle Open Data Rent Typology Dataset
+        </a>
+      </p>
+    </section>
+    <section class="story-section">
+      <h2>Location is only one piece of the affordability story</h2>
+    <p>
+      The maps show where higher rents were concentrated, but they do not explain how neighborhood conditions
+      may relate to rising housing pressure. The next visualization looks at rent patterns alongside tract-level
+      activity before, during, and after COVID.
+    </p>
+    </section>
+    <section class="chart-card">
+      <p class="section-number">03</p>
+
+      <h2>Neighborhood change may be tied to rising costs</h2>
+
+      <p>
+        These scatterplots compare Seattle census tract activity with three separate scatterplots for before, during, and after COVID.
+        Each panel uses the same axes so you can compare rent patterns across time,
+        with bubble fill grouping tracts into 10 broader Seattle regions.
+      </p>
+
+      <div class="description-box">
+        <h3>How to read this chart</h3>
+
+        <p>
+          Each panel represents a COVID period and uses the same x and y scales to make time-based comparisons easier:
+        </p>
+
+        <ul>
+          <li><strong>x-axis:</strong> Number of home flips per tract when available, otherwise number of properties per tract.</li>
+          <li><strong>y-axis:</strong> Rent increase percentage when available, otherwise rent price per unit.</li>
+          <li><strong>Bubble size:</strong> Local resident concern from the rent typology dataset.</li>
+          <li><strong>Bubble color:</strong> Aggregated Seattle region group, combining community reporting areas into 10 broader regions.</li>
+        </ul>
+
+        <p>
+          This layout tells a COVID-era story by comparing pre-pandemic baseline patterns, pandemic disruption, and post-pandemic recovery in one view.
+        </p>
+      </div>
+
+      <div id="scatterplot"></div>
+
+      <section class="results-box">
+        <h3>Results</h3>
+
+        <p>
+          These visuals let viewers compare the same rent relationship before, during, and after COVID, using consistent x/y scales so changes are visible and measurable.
+        </p>
+
+        <p>
+          <strong>Before COVID:</strong> This panel establishes the baseline of rent measures and concern levels. Look for how rent values are distributed and whether concern is concentrated in certain regions before the pandemic.
+        </p>
+
+        <p>
+          <strong>During COVID:</strong> This panel highlights pandemic disruption. If rent increase values move higher or if concern bubbles become larger across more regions, that indicates rising stress during the pandemic period.
+        </p>
+
+        <p>
+          <strong>After COVID:</strong> This panel is the key comparison for the claim. It should show higher rent values on the y-axis and broader concern scores across regions. If more bubbles appear higher and spread across more region colors than in the earlier panels, that supports the conclusion that rent pressure increased after COVID.
+        </p>
+
+        <p>
+          Because the chart uses the same axes in every panel, the comparison is direct: higher bubble positions in the After COVID panel reflect stronger rent outcomes, while larger bubble sizes indicate wider concern. Together, these patterns tell a story of rising post-pandemic rent pressure across Seattle.
+        </p>
+      </section>
+
+      <p class="chart-note">
+        Takeaway: the scatterplots suggest that rent pressure did not appear evenly across the city.
+        Comparing the same relationship before, during, and after COVID helps show how housing pressure shifted over time.
+      </p>
+
+      <p class="caption">
+        Sources:
+        <a href="https://data.seattle.gov/dataset/Apartment-Market-Rent-Prices-by-Census-Tract/h27p-5k3i/about_data" target="_blank">
+          Seattle Open Data Rent Typology Dataset
+        </a>
+        and
+        <a href="https://data.seattle.gov/dataset/Single-Family-Home-Flips-by-Census-Tract/e9ve-4v8v/about_data" target="_blank">
+          Seattle Open Data Home Flips Dataset
+        </a>
+      </p>
+    </section>
+
+    <section class="story-section">
+  <h2>So what does this mean for Seattle residents?</h2>
+  <p>
+    Together, these visuals suggest that Seattle’s recovery was uneven. Income growth, rent levels, and
+    neighborhood patterns each tell part of the story, but the larger takeaway is that housing affordability
+    remained a spatial issue after COVID.
+  </p>
+  </section>
+
+  <section class="story-image-section">
+  <img
+    src="images/seattle2.jpg"
+    alt="Downtown Seattle street scene with buses and pedestrians"
+    class="hero-image">
+
+  <p class="image-caption">
+    Downtown Seattle in 2025. Housing affordability and neighborhood change continue to shape how residents experience the city's recovery.
+    Photo source:
+    <a href="https://downtownseattle.org/2025/03/seattle-magazine-fixing-third-avenue-one-step-at-a-time/"
+       target="_blank">
+      Downtown Seattle Association
+    </a>
+  </p>
+
+</section>
+
+</section>
+
+    <section class="story-section conclusion">
+      <h2><h2>The Data Suggests Housing Pressure Persisted After COVID</h2></h2>
+
+      <p>
+        Seattle’s post-COVID recovery did not reduce housing pressure evenly across the city.
+        Rents remained highest in central and downtown-adjacent areas, while income growth alone
+        may not have been enough to offset rising housing costs.
+      </p>
+
+      <p>
+        For residents, this matters because affordability shapes who can stay in their neighborhoods,
+        who is pushed farther away, and how Seattle changes over time.
+      </p>
+    </section>
+
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="yahya_linechart.js"></script>
+  <script src="main.js"></script>
+  <script src="rishita_scatterplot.js"></script>
+
+  <section class="references-section">
+
+<section class="references-section">
+
+<section class="references-box">
+
+  <h2>Project References</h2>
+
+  <p>
+    This project was built using public Seattle housing datasets and D3.js visualization tools.
+    The following resources informed the design and implementation of the interactive visualizations.
+  </p>
+
+  <ul>
+    <li>
+      <a href="https://d3js.org/" target="_blank">
+        D3.js Documentation
+      </a>
+    </li>
+
+    <li>
+      <a href="https://d3js.org/d3-geo" target="_blank">
+        D3 Geo Documentation
+      </a>
+    </li>
+
+    <li>
+      <a href="https://d3-graph-gallery.com/scatter.html" target="_blank">
+        D3 Scatterplot Graph Gallery
+      </a>
+    </li>
+
+    <li>
+      <a href="https://d3-graph-gallery.com/line" target="_blank">
+        D3 Line Chart Graph Gallery
+      </a>
+    </li>
+
+    <li>
+      <a href="https://d3js.org/d3-zoom/" target="_blank">
+        D3 Zoom Documentation
+      </a>
+    </li>
+
+    <li>
+      <a href="https://d3-graph-gallery.com/choropleth.html" target="_blank">
+        D3 Graph Gallery: Choropleth Maps
+      </a>
+    </li>
+
+    <li>
+      <a href="https://observablehq.com/@d3/choropleth" target="_blank">
+        Mike Bostock Choropleth Example
+      </a>
+    </li>
+  </ul>
+
+</section>
+</body>
+</html>
